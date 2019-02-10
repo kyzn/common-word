@@ -29,6 +29,14 @@ Bu aşağıdaki gibi bir sonuç çıkaracaktır.
 
 Bu örnek sorunun çözümü "çağa veya ağaç" olarak belirlenebilir.
 
+## Yeni soru üretmek
+
+Bu betik kullanılarak yeni sorular da üretilebilir. Bunun için önce cevabınızı belirleyin. Daha sonra bu kelimeyi betiğe tek başına verin.
+
+    perl common-word.pl kelime-listesi.txt ağaç
+
+Bu size çok sayıda çözüm önerecektir. Bu çözümler arasından istediğiniz sayıda kelimeyi seçerek kendi bulmacanızı hazırlayabilirsiniz.
+
 ## Lisans
 
 Bu betik MIT lisansı ile lisanslanmıştır. Lisansın İngilizce orijinal metnini [buradan](/LICENSE), gayrıresmi Türkçe çevirisini [buradan](http://ozgurlisanslar.org.tr/mit/) okuyabilirsiniz.
@@ -73,6 +81,14 @@ This will print following output.
     bored + find = forbidden
 
 The only solution here is "find".
+
+## Creating new questions
+
+This script can be used to generate new questions as well. To do that, think of your answer first. Then pass it to script alone.
+
+    perl common-word.pl /usr/share/dict/american-english press
+
+This will produce many answers. You can choose as many words from list of answers to prepare your very own riddle.
 
 ## License
 
