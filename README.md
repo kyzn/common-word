@@ -9,7 +9,7 @@ Bu betik bir bulmaca çözücüdür. Aşağıda alıntılanan tarzdaki problemle
     her biriyle harfleri bir araya getirildiğinde
     yeni anlamlı sözcükler oluşsun.
     
-    Baş, Dans, Not, Sap.
+    Dolma, Beyinli, Kılıç, Devirmek.
 
 ## Kullanım
 
@@ -17,29 +17,17 @@ Türkçe kelime listesi edinmeniz gerekmektedir. Bunu [maidis/mythes-tr](https:/
 
 Komut satırına argüman olarak kelime listesi dosyasının konumunu ve peş peşe bulmaca kelimelerini girmelisiniz.
 
-    perl common-word.pl kelime-listesi.txt baş dans not sap
+    perl common-word.pl kelime-listesi.txt dolma beyinli kılıç devirmek
 
 Bu aşağıdaki gibi bir sonuç çıkaracaktır.
 
-    Answer: lak
-    baş + lak = başlak
-    dans + lak = skandal
-    not + lak = tolkan
-    sap + lak = salpak
+    Answer: çağa
+    dolma + çağa = doğaçlama
+    beyinli + çağa = yabançileği
+    kılıç + çağa = ağaççılık
+    devirmek + çağa = çavdarekmeği
 
-    Answer: kıla
-    baş + kıla = başaklı
-    dans + kıla = nadaslık
-    not + kıla = noktalı
-    sap + kıla = pasaklı
-
-    Answer: ıra
-    baş + ıra = başarı
-    dans + ıra = sıradan
-    not + ıra = orantı
-    sap + ıra = pırasa
-
-Bu örneğin "lak, kal, kıla, akıl, ıra, arı" gibi bir çok çözümü vardır.
+Bu örnek sorunun çözümü "çağa veya ağaç" olarak belirlenebilir.
 
 ## Lisans
 
