@@ -21,11 +21,11 @@ Komut satırına argüman olarak kelime listesi dosyasının konumunu ve peş pe
 
 Bu aşağıdaki gibi bir sonuç çıkaracaktır.
 
-    çağa:
-    dolma    + çağa = doğaçlama
-    beyinli  + çağa = yabançileği
-    kılıç    + çağa = ağaççılık
-    devirmek + çağa = çavdarekmeği
+    ağaç/çağa:
+    dolma    + ağaç/çağa = doğaçlama
+    beyinli  + ağaç/çağa = yabançileği
+    kılıç    + ağaç/çağa = ağaççılık
+    devirmek + ağaç/çağa = çavdarekmeği
 
 Bu örnek sorunun çözümü "ağaç veya çağa" olarak belirlenebilir.
 
