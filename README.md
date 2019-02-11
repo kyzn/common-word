@@ -21,13 +21,13 @@ Komut satırına argüman olarak kelime listesi dosyasının konumunu ve peş pe
 
 Bu aşağıdaki gibi bir sonuç çıkaracaktır.
 
-    Answer: çağa
-    dolma + çağa = doğaçlama
-    beyinli + çağa = yabançileği
-    kılıç + çağa = ağaççılık
+    çağa:
+    dolma    + çağa = doğaçlama
+    beyinli  + çağa = yabançileği
+    kılıç    + çağa = ağaççılık
     devirmek + çağa = çavdarekmeği
 
-Bu örnek sorunun çözümü "çağa veya ağaç" olarak belirlenebilir.
+Bu örnek sorunun çözümü "ağaç veya çağa" olarak belirlenebilir.
 
 ## Yeni soru üretmek
 
@@ -74,11 +74,11 @@ In arguments, you should first put path to your word list. Then give riddle word
 
 This will print following output.
 
-    Answer: find
-    beer + find = befriend
-    trash + find = firsthand
+    find:
+    beer   + find = befriend
+    trash  + find = firsthand
     perish + find = friendship
-    bored + find = forbidden
+    bored  + find = forbidden
 
 The only solution here is "find".
 

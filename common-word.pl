@@ -11,6 +11,8 @@ no warnings 'utf8';
 binmode(STDOUT, ":utf8");
 use Encode qw/decode_utf8/;
 
+use List::Util qw/max/;
+
 # Load dictionary
 my $filename = shift @ARGV;
 open(my $fh, "<", $filename) or die "Can't open $filename: $!";
@@ -71,13 +73,17 @@ foreach my $word (@words){
 }
 
 # Print answers that match all of given words
+my $max_input_word_size = max map { length } @words;
+
 foreach my $key (keys %$answers){
   my $value = $answers->{$key}; # hashref
   if (scalar(keys %$value) == scalar(@words)){
-    print "\nAnswer: $key\n";
+    print "\n$key:\n";
     foreach my $word (@words){
       my $combined = $value->{$word};
-      print "$word + $key = $combined\n";
+      print "$word "
+            . ( ' ' x ($max_input_word_size - length($word)) )
+            . "+ $key = $combined\n";
     }
   }
 }
