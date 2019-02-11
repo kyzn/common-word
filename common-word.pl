@@ -32,12 +32,32 @@ my @words = map { lc } @ARGV;
 
 # Collect answers
 # "answers" is a hashref with following structure.
-# key   = Dictionary word sorted by letters.
-#         This is going to be our potential answer, sorted.
+# key   = Dictionary word, potential answer.
 # value = Another hashref with following structure.
-#   keys   = Words from arguments
+#   keys   = Input words from arguments
 #   values = Dictionary word that can be built with letters of
 #            potential answer + current key
+
+# Here's an example with input words = beer trash perish bored.
+# $answers = {
+#   'find' => {
+#     'beer'   => 'befriend',
+#     'trash'  => 'firsthand',
+#     'perish' => 'friendship',
+#     'bored'  => 'forbidden',
+#   },
+#   'set'  => {
+#     'trash'  => 'shatters',
+#     'bored'  => 'bestrode',
+#   },
+#   ...
+# };
+
+# At the same time, you have %sorted_dict hash with:
+#   'dfin' => 'find'
+#   'est'  => 'set'
+#   ...
+
 my $answers = {};
 foreach my $word (@words){
   foreach my $key (keys %sorted_dict){
